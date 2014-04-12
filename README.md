@@ -19,3 +19,8 @@
  1) limit : some int value.<br/>
  2) decimal : boolean. true: allows only decimal otherwise integer only.<br/>
  3) negative : boolean <br/>
+ </br>
+ <hr/>
+ <a href="http://embed.plnkr.co/2pwuJSrD9twIHkU3YuLO/preview" target="_blank">Demo</a>
+ <br/>
+ <hr/>
