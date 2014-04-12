@@ -2,6 +2,7 @@
  email  : broshnikanta@gmail.com<br/>
  DESCRIPTION<br/>
  jquery.numeric.js<br/>
+ Ver: 1.0<br/>
  A plugin for input value which restricts user to input decimal value only.<br/>
  It takes one or more than one argument in config which are explained below.<br/>
  This plugin is free to use and distribute.<br/>
