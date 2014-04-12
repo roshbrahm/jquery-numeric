@@ -3,10 +3,7 @@
  DESCRIPTION<br/>
  jquery.numeric.js<br/>
  A plugin for input value which restricts user to input decimal value only.<br/>
- It allows decimal value only.<br/>
- It takes an argument in config which indicates the max-character length of the input.<br/>
- In the given html, we have put the max-character length as 10.<br/>
- So it will restrict the user to input not more than 10 character.<br/>
+ It takes one or more than one argument in config which are explained below.<br/>
  This plugin is free to use and distribute.<br/>
  And anybody willing to upgrade or enhance the plugin are welcome.<br/>
  <b>Integer Only</b><br/>
