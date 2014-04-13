@@ -1,0 +1,94 @@
+.numericKeypad {
+    background-color: #144b90;
+    border: 1px solid #666666;
+    color: #000000;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    margin: 2px;
+    padding: 3px 6px;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /*height: 250px;*/
+    width: 120px;
+}
+.key {
+    background-color: #EEEEEE;
+    border: 1px solid #666666;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50px; 
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+.key:hover {
+    background-color: #009bf4;
+    border: 1px solid #666666;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50px; 
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+.big-key {
+    background-color: #EEEEEE;
+    border: 1px solid #666666;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px 5px 5px 5px;
+    width: 85%;
+    text-align: center;
+    border-radius: 25px; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.big-key:hover {
+    background-color: #009bf4;
+    border: 1px solid #666666;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px 5px 5px 5px;
+    width: 85%;
+    text-align: center;
+    border-radius: 25px; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.circle{
+    background-color: #009bf4;
+    border-radius: 50px; 
+    -moz-border-radius: 50px; 
+    -webkit-border-radius: 50px; 
+    width: 25px;
+    border: 0px solid #800000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
