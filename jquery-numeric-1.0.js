@@ -4,7 +4,7 @@
 * DESCRIPTION
 * jquery.decimal.js
 * A plugin for input value which restricts user to input decimal value only.
-* This plugin has an option to embed Numeric Pad.
+* It has an option to embed Numeric Pad inline.
 * This plugin is free to use and distribute.
 * And anybody willing to upgrade or enhance the plugin are welcome.
 */
@@ -163,68 +163,68 @@
         return true;		
 	}
 	function setNum(val,targetId,maxLen){
-	    var answer = document.getElementById(targetId);
-	    var caretPosition=caret(answer);
-        var result = answer.value.splice( caretPosition, 0, val );
+	    var elem = document.getElementById(targetId);
+	    var caretPosition=caret(elem);
+        var result = elem.value.splice( caretPosition, 0, val );
         if(maxLen==undefined){
-            answer.value=result;    
+            elem.value=result;    
         }
 	    else if(result.length<=maxLen-1){
-	        answer.value=result;
+	        elem.value=result;
 	    }
 	    setCaretPosition(targetId, caretPosition+1);
 	}
     function negate(val,targetId,maxLen){
-        var answer = document.getElementById(targetId);
+        var elem = document.getElementById(targetId);
         console.log(targetId)
-        var caretPosition=caret(answer);
+        var caretPosition=caret(elem);
         if(caretPosition==0){
             if(answer.value.charAt(0)!="-"){
                 if(maxLen==undefined){
-                    answer.value = val+answer.value;   
+                    elem.value = val+elem.value;   
                 }
                 else if(answer.value.length <=maxLen-1){
-                    answer.value = val+answer.value;
+                    elem.value = val+elem.value;
                 }
                 setCaretPosition(targetId, caretPosition+1);
             }
         }
-        caretPosition=caret(answer);
+        caretPosition=caret(elem);
         setCaretPosition(targetId, caretPosition);
     }
     function setDot(targetId,maxLen){
-        var answer = document.getElementById(targetId);
-        var caretPosition=caret(answer);
-        if(answer.value.indexOf(".") == -1){
-            var result = answer.value.splice( caretPosition, 0, "." );
+        var elem = document.getElementById(targetId);
+        var caretPosition=caret(elem);
+        if(elem.value.indexOf(".") == -1){
+            var result = elem.value.splice( caretPosition, 0, "." );
             if(maxLen==undefined){
-                answer.value=result;
+                elem.value=result;
             }
             else if(result.length <=maxLen){
-                answer.value=result;
+                elem.value=result;
             }
         }    
         setCaretPosition(targetId, caretPosition+1)
     }
     function backspace(targetId){
-        var answer = document.getElementById(targetId);
-        var caretPosition=caret(answer);
-        answer.value = answer.value.replaceAt(caretPosition-1,"");
+        var elem = document.getElementById(targetId);
+        var caretPosition=caret(elem);
+        elem.value = elem.value.replaceAt(caretPosition-1,"");
         setCaretPosition(targetId, caretPosition-1)
     }
     function left(targetId){
-        var answer = document.getElementById(targetId);
-        var caretPosition=caret(answer);
+        var elem = document.getElementById(targetId);
+        var caretPosition=caret(elem);
         setCaretPosition(targetId, caretPosition-1)
     }
     function right(targetId){
-        var answer = document.getElementById(targetId);
-        var caretPosition=caret(answer);
+        var elem = document.getElementById(targetId);
+        var caretPosition=caret(elem);
         setCaretPosition(targetId, caretPosition+1)
     }
     function clearData(targetId){
-        var answer = document.getElementById(targetId);
-        answer.value="";
+        var elem = document.getElementById(targetId);
+        elem.value="";
         setCaretPosition(targetId,0)
     }
     function caret(node) {
