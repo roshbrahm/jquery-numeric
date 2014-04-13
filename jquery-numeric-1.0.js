@@ -2,7 +2,7 @@
 * Author : Rosh Brahm
 * email  : broshnikanta@gmail.com
 * DESCRIPTION
-* jquery.decimal.js
+* jquery.numeric.js
 * A plugin for input value which restricts user to input decimal value only.
 * It has an option to embed Numeric Pad inline.
 * This plugin is free to use and distribute.
